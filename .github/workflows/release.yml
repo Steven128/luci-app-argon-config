@@ -4,6 +4,12 @@ on:
   push:
     tags:
       - 'release-*'
+  workflow_dispatch:
+    inputs:
+      param:
+        description: 'param'
+        required: false
+        default: ''
 
 jobs:
   build:
